@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">Venture<span>Vista</span></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#form-section">Book Now</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="https://www.pexels.com/download/video/2547258/" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Beyond Destinations - Into Discovery.</h1>
+            <p>Explore breathtaking destinations around the world with our curated travel experiences. From tropical beaches to majestic mountains, your dream vacation awaits.</p>
+            <a href="#form-section" class="cta-button">Book Your Trip</a>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Destinations</h2>
+                <p>Explore our handpicked selection of beautiful places</p>
+            </div>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Santorini">
+                    </div>
+                    <div class="card-content">
+                        <h3>Santorini, Greece</h3>
+                        <p>Experience stunning white-washed buildings and breathtaking sunsets.</p>
+                        <div class="card-price">From ₹60,000</div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://media.istockphoto.com/id/653953140/photo/hindu-temple-in-bali.jpg?s=612x612&w=0&k=20&c=ysj3S2kV1ZgCr4QZWDzjvHRowCI3-cR1xQNnqE8-BS4=" alt="Bali">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Discover tropical paradise with lush rice terraces and pristine beaches.</p>
+                        <div class="card-price">From ₹45,000</div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Kyoto">
+                    </div>
+                    <div class="card-content">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Immerse yourself in traditional Japanese culture and beautiful gardens.</p>
+                        <div class="card-price">From ₹80,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="form-section">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Plan Your Journey</h2>
+                <p> Fill out the form below and our travel experts will help you create the perfect itinerary.</p>
+            </div>
+            <div class="form-container">
+                <!-- <div class="form-image">
+                    <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Kyoto">
+                </div> -->
+                <div class="form-content">
+                    <form id="travel-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" class="form-control" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" class="form-control" placeholder="Your phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Travelers</label>
+                                <select class="form-control" required>
+                                    <option value="">Select travelers</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <select class="form-control" required>
+                                    <option value="">Select destination</option>
+                                    <option value="santorini">Santorini</option>
+                                    <option value="bali">Bali</option>
+                                    <option value="kyoto">Kyoto</option>
+                                </select>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label>Budget</label>
+                                <select class="form-control" required>
+                                    <option value="">Select budget</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2000">$1,000 - $2,000</option>
+                                    <option value="2000-3000">$2,000 - $3,000</option>
+                                </select>
+                            </div> -->
+                        </div>
+                        <!-- <div class="form-group">
+                            <label>Travel Dates</label>
+                            <input type="text" class="form-control" placeholder="Select dates" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                        </div> -->
+                        <div class="form-group">
+                            <label>Special Requests</label>
+                            <textarea class="form-control" rows="3" placeholder="Any special requests"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <section class="Contact" id="Contact">
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About VentureVista</h3>
+                    <p>We create unforgettable travel experiences to beautiful destinations.</p>
+                    <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div> -->
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#form-section">Book Now</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 4th Street Nagpur</li>
+                        <li><i class="fas fa-phone"></i> +91 9999999999</li>
+                        <li><i class="fas fa-envelope"></i> info@VentureVista.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 VentureVista Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Form submission
+        document.getElementById('travel-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
