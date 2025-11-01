@@ -10,7 +10,8 @@
             line-height: 1.6;
         }
 
-        /* Header */
+        
+
         header {
             position: fixed;
             top: 0;
@@ -66,7 +67,8 @@
             color: #e74c3c;
         }
 
-        /* Hero Section */
+        
+
         .hero {
             height: 100vh;
             position: relative;
@@ -133,7 +135,8 @@
             background: #c0392b;
         }
 
-        /* Destinations */
+    
+
         .destinations {
             padding: 80px 5%;
         }
@@ -202,7 +205,8 @@
             color: #e74c3c;
         }
 
-        /* Form Section */
+    
+
         .form-section {
             padding: 80px 5%;
             background: #f9f9f9;
@@ -268,7 +272,8 @@
             background: #2980b9;
         }
 
-        /* Footer */
+    
+
         footer {
             background: #2c3e50;
             color: white;
@@ -342,7 +347,8 @@
             color: #bdc3c7;
         }
 
-        /* Responsive */
+    
+        
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
