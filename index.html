@@ -4,90 +4,319 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VentureVista Travel</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header id="header">
-        <a href="#" class="logo">Venture<span>Vista</span></a>
+        <a href="#" class="logo"><i class="fas fa-mountain"></i>Venture<span>Vista</span></a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#categories">Categories</a></li>
                 <li><a href="#form-section">Book Now</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
 
     <section class="hero">
         <div class="video-container">
             <video autoplay muted loop>
                 <source src="./2169879-uhd_3840_2160_30fps (3).mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
-            <div class="video-overlay"></div>
         </div>
         <div class="hero-content">
             <h1>Beyond Destinations - Into Discovery.</h1>
-            <p>Explore breathtaking destinations around the world with our curated travel experiences. From tropical beaches to majestic mountains, your dream vacation awaits.</p>
+            <p>Explore breathtaking destinations around the world with our curated travel experiences.</p>
             <a href="#form-section" class="cta-button">Book Your Trip</a>
         </div>
     </section>
 
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-text">Destinations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-text">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-text">Happy Travelers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-text">Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-categories" id="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel Categories</h2>
+                <p>Find your perfect travel experience based on your interests</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Nature" class="category-image">
+                    <div class="category-overlay">
+                        <div class="category-name">Nature & Wildlife</div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2073" alt="Beach" class="category-image">
+                    <div class="category-overlay">
+                        <div class="category-name">Beach Getaways</div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Adventure" class="category-image">
+                    <div class="category-overlay">
+                        <div class="category-name">Adventure Travel</div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Cultural" class="category-image">
+                    <div class="category-overlay">
+                        <div class="category-name">Cultural Experiences</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="destinations" id="destinations">
         <div class="container">
             <div class="section-title">
                 <h2>Popular Destinations</h2>
-                <p>Explore our handpicked selection of beautiful places</p>
+                <p>Explore our handpicked selection of beautiful places around the world</p>
             </div>
-            <div class="destination-grid">
-                <div class="destination-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Santorini">
+            
+            <div class="scroll-container">
+                <div class="destination-scroll">
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Santorini">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Santorini, Greece</h3>
+                            <p>Experience stunning white-washed buildings and breathtaking sunsets in this iconic Greek island paradise.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3>Santorini, Greece</h3>
-                        <p>Experience stunning white-washed buildings and breathtaking sunsets.</p>
-                        <div class="card-price">From ₹60,000</div>
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/id/653953140/photo/hindu-temple-in-bali.jpg?s=612x612&w=0&k=20&c=ysj3S2kV1ZgCr4QZWDzjvHRowCI3-cR1xQNnqE8-BS4=" alt="Bali">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Bali, Indonesia</h3>
+                            <p>Discover tropical paradise with lush rice terraces, pristine beaches, and vibrant cultural experiences.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
                     </div>
-                </div>
-                <div class="destination-card">
-                    <div class="card-image">
-                        <img src="https://media.istockphoto.com/id/653953140/photo/hindu-temple-in-bali.jpg?s=612x612&w=0&k=20&c=ysj3S2kV1ZgCr4QZWDzjvHRowCI3-cR1xQNnqE8-BS4=" alt="Bali">
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Kyoto">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Kyoto, Japan</h3>
+                            <p>Immerse yourself in traditional Japanese culture, beautiful gardens, and historic temples.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3>Bali, Indonesia</h3>
-                        <p>Discover tropical paradise with lush rice terraces and pristine beaches.</p>
-                        <div class="card-price">From ₹45,000</div>
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2073" alt="Paris">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Paris, France</h3>
+                            <p>Experience the city of love with its iconic landmarks, world-class cuisine, and romantic ambiance.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
                     </div>
-                </div>
-                <div class="destination-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Kyoto">
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070" alt="Paris">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card-content">
+                            <h3>New York, USA</h3>
+                            <p>Discover the city that never sleeps with its iconic skyline, Broadway shows, and diverse culture.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3>Kyoto, Japan</h3>
-                        <p>Immerse yourself in traditional Japanese culture and beautiful gardens.</p>
-                        <div class="card-price">From ₹80,000</div>
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070" alt="Switzerland">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Swiss Alps, Switzerland</h3>
+                            <p>Experience breathtaking mountain scenery, charming villages, and world-class skiing.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Dubai">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Dubai, UAE</h3>
+                            <p>Explore futuristic architecture, luxury shopping, and desert adventures in this vibrant city.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Australia">
+                            <div class="card-overlay">
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Sydney, Australia</h3>
+                            <p>Discover iconic landmarks, beautiful beaches, and vibrant culture in this coastal metropolis.</p>
+                            <a href="#" class="explore-btn">Explore</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Traveler Stories</h2>
+                <p>See what our customers have to say about their experiences</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>My trip to Santorini was absolutely magical! VentureVista took care of every detail, from flights to accommodations. The sunset cruise was the highlight of our vacation.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Sharma</h4>
+                            <p>Santorini Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Bali exceeded all my expectations. The cultural tours and beach resorts were perfectly balanced. Thank you VentureVista for an unforgettable experience!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Kapil Verma</h4>
+                            <p>Bali Explorer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Kyoto's temples and gardens were breathtaking. The guides were knowledgeable and the itinerary was perfectly paced. I'll definitely use VentureVista again!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jitesh Kohli</h4>
+                            <p>Japan Adventurer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="form-section" id="form-section">
         <div class="container">
-
             <div class="section-title">
                 <h2>Plan Your Journey</h2>
-                <p> Fill out the form below and our travel experts will help you create the perfect itinerary.</p>
+                <p>Fill out the form below and our travel experts will help you create the perfect itinerary.</p>
             </div>
             <div class="form-container">
+                <div class="form-image">
+                    <div class="form-image-content">
+                        <i class="fas fa-suitcase-rolling fa-3x"></i>
+                        <h3>Start Your Adventure</h3>
+                        <p>Our travel experts are ready to craft your perfect getaway.</p>
+                    </div>
+                </div>
                 <div class="form-content">
                     <form id="travel-form">
                         <div class="form-row">
@@ -113,23 +342,26 @@
                                     <option value="2">2 People</option>
                                     <option value="3">3 People</option>
                                     <option value="4">4 People</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Destination</label>
-                                <select class="form-control" required>
-                                    <option value="">Select destination</option>
-                                    <option value="santorini">Santorini</option>
-                                    <option value="bali">Bali</option>
-                                    <option value="kyoto">Kyoto</option>
+                                    <option value="5">5+ People</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
+                            <label>Destination</label>
+                            <select class="form-control" required>
+                                <option value="">Select destination</option>
+                                <option value="santorini">Santorini</option>
+                                <option value="bali">Bali</option>
+                                <option value="kyoto">Kyoto</option>
+                                <option value="paris">Paris</option>
+                                <option value="newyork">New York</option>
+                                <option value="switzerland">Switzerland</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label>Special Requests</label>
-                            <textarea class="form-control" rows="3" placeholder="Any special requests"></textarea>
+                            <textarea class="form-control" rows="3" placeholder="Any special requests or preferences"></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Submit Inquiry</button>
                     </form>
@@ -138,22 +370,27 @@
         </div>
     </section>
 
-
-     <section class="Contact" id="Contact">
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>About VentureVista</h3>
-                    <p>We create unforgettable travel experiences to beautiful destinations.</p>
+                    <p>We create unforgettable travel experiences to beautiful destinations around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#">Home</a></li>
                         <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#categories">Categories</a></li>
                         <li><a href="#form-section">Book Now</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -162,18 +399,17 @@
                         <li><i class="fas fa-map-marker-alt"></i> 4th Street Nagpur</li>
                         <li><i class="fas fa-phone"></i> +91 9999999999</li>
                         <li><i class="fas fa-envelope"></i> info@VentureVista.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 24/7</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 VentureVista Travel. All rights reserved.</p>
+                <p> Made with 💙 by Samruddhi</p>
             </div>
         </div>
     </footer>
-    </section>
 
     <script>
-
         window.addEventListener('scroll', function() {
             const header = document.getElementById('header');
             if (window.scrollY > 50) {
@@ -183,11 +419,6 @@
             }
         });
 
-        document.getElementById('travel-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your inquiry! We will contact you soon.');
-            this.reset();
-        });
     </script>
 </body>
 </html>
